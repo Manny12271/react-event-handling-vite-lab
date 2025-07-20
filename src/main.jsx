@@ -1,10 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './components/App.jsx'
+import React from "react";
+import PasswordInput from "./components/PasswordInput";
+import SubmitButton from "./components/SubmitButton";
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+function App() {
+  return (
+    <div>
+      <PasswordInput />
+      <SubmitButton />
+    </div>
+  );
+}
+
+export default App;
